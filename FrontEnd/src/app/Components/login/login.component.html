@@ -1,10 +1,14 @@
 <div class="input-container">
-  <p class="signin-font">Sign in</p>
-  <p class="signin-font">Use your Google Account</p>
+  <div class="googleDiv">
+    <img src="assets/images/GoogleLogo.jpg" class="Google-Image">
+    <p class="signin-font">Sign in</p>
+    <p class="googleAccount-font">Use your Google Account</p>
+  </div>
   <p style="text-align: center">
-      <mat-form-field appearance="outline" floatLabel="auto">
+      <mat-form-field appearance="outline" floatLabel="auto" style="width: 350px">
         <mat-label>Email</mat-label>
-        <input matInput placeholder="Enter your Gmail">
-      </mat-form-field>
+        <input type="email" matInput>
+      </mat-form-field><br>
+      <button mat-flat-button class="signin-button-color">Sign in</button>
   </p>
 </div>
