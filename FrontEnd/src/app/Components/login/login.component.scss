@@ -3,9 +3,10 @@
   height: 500px;
   background-color: white;
   border-style: solid;
-  border-color: darkgrey;
+  border-color: rgba(169, 169, 169, 0.35);
   border-width: thin;
   border-radius: 10px;
+
   position: absolute;
   left: 0;
   right: 0;
@@ -18,9 +19,12 @@
   text-align: center;
 }
 
-.signin-font {
-  font-family: "Roboto Light", "Helvetica Neue", sans-serif;
-  font-size: 20pt;
+.signin {
+  font-family: "OpenSans-Light", sans-serif;
+  font-size: 24px;
+  font-weight: lighter;
+  margin: 0;
+  padding: 16px 0 0;
 }
 
 .signin-button-color {
@@ -28,17 +32,19 @@
   color: white;
 }
 
-.googleAccount-font  {
+.googleAccount  {
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  font-size: 12pt;
+  font-size: 16px;
+  padding: 8px 0 0;
 }
 
 .Google-Image {
-  width: 100px;
+  width: 75px;
+  height: 30px;
 }
 
 .googleDiv {
-  padding-top: 40px;
+  padding: 48px 40px 36px;
 }
 
 .input-size {
