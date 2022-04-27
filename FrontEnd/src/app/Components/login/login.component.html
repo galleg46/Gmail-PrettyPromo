@@ -1,6 +1,5 @@
 <div class="input-container">
   <div class="googleDiv">
-    <!--<img src="assets/images/GoogleLogo.jpg" class="Google-Image"> -->
     <svg viewBox="0 0 75 24" width="75" height="24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
          class="l5Lhkf">
       <g id="qaEJec">
@@ -30,15 +29,13 @@
     <h1 class="signin">Sign in</h1>
     <p class="googleAccount">Use your Google Account</p>
     <div style="padding: 24px 0 0">
-      <p style="text-align: center">
-        <mat-form-field appearance="outline" floatLabel="auto" style="width: 350px">
-          <mat-label>Email</mat-label>
-          <input type="email" matInput>
+      <form #login = "ngForm" (ngSubmit)="LoginWithGmail(login)">
+        <mat-form-field appearance="outline" floatLabel="auto" style="width: 350px;">
+          <mat-label style="font-size: larger">Email</mat-label>
+          <input type="email"  style="margin: 1px 1px 0;" matInput>
         </mat-form-field>
-        <br>
-        <button mat-flat-button class="signin-button-color">Sign in</button>
-      </p>
+        <button mat-flat-button class="next-button-color">Next</button>
+      </form>
     </div>
-
   </div>
 </div>
